@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="hamburger" id="ham" onclick="toggleSidebar()">☰</div>
+    <div class="sidebar" id="sidebar">
+        <h3 style="margin: 50px; "><a href="../login/index.html"
+                style="text-decoration: none; color: white; ">logout</a>
+        </h3>
+        <h3 style="margin: 50px; "><a href="./about.html" style="text-decoration: none; color: white;">about</a>
+        </h3>
+
+        <div id="dynamic-tags" class="bottom-sidebar" style="margin-bottom: 500px;">
+            <input type="text" id="tag-input" placeholder="Enter Room Name">
+            <button id="tag-but" onclick="createTag()">Create</button>
+        </div>
+    </div>
+    <div class="chatbot-container">
+        <div id="header">
+            <h1>ChattyBot</h1>
+            <h5>lets Talk</h5>
+        </div>
+        <div id="chatbot">
+            <div id="conversation">
+                <div class="chatbot-message">
+                    <p class="chatbot-text">Hi! 👋 it's great to see you!</p>
+                </div>
+            </div>
+            <form id="input-form">
+                <message-container>
+                    <input id="input-field" type="text" placeholder="Type your message here">
+                    <button id="submit-button" style="width: 50px; " type="submit">
+                        <i class="fa fa-paper-plane" style="font-size: 30px; color: lightblue;"></i> </button>
+                </message-container>
+
+            </form>
+        </div>
+
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
